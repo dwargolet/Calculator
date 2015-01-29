@@ -11,6 +11,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <% final String placeHolder = ""; %>
         <title>Lab 3</title>
+        <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+        
     </head>
     <body>
         <%
@@ -18,6 +20,7 @@
             String outputMsg = o == null ? placeHolder : o.toString();                     
         %>
         <h4 style="text-align: center;">Rectangle Calculator</h4>
+        
         <form id="recForm" name="recForm" method="POST" action="../tri?action=rect">
             <label for = "length">Length</label>
                 <input id="length" name="length" type="number" value="Length" required="required"/>

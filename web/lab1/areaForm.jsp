@@ -9,6 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="../css/style.css" rel="stylesheet" type="text/css"/>
         <title>Rectangle Area</title>
     </head>
     <body>
@@ -18,6 +19,8 @@
                 <input id="length" name="length" type="number" value="Length" required="required" />
             <label for = "width">Width</label>
                 <input id="width" name="width" type="number" value="Width" required="required" />
+                <br />
+                <br />
                 <input type="submit" name="submit" value="Calculate" />            
         </form> 
       
