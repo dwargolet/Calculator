@@ -30,17 +30,15 @@ private static final String RESULT_PAGE = "lab1/result.jsp";
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-        
-            Object length = request.getParameter("length");
-            Object width = request.getParameter("width");
-           
-            
-            AreaCalculatingService a = new AreaCalculatingService();
 
-            double length2 = (double)length;
-            double width2 = (double)width;
-            String result = a.getAreaMsg(length2, width2);
-        
+            
+           String width = request.getParameter("width");
+           String length = request.getParameter("length");
+           
+            AreaCalculatingService a = new AreaCalculatingService();  
+            
+            String result = a.getAreaMsg(length, width);
+            
             request.setAttribute("area", result);
         
             RequestDispatcher view =
