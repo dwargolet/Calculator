@@ -34,6 +34,6 @@
         <br />
         <h4 style="text-align: center;">Results</h4>
         <p align="center"><% out.println(outputMsg); %></p>
-        <p><a href="/index.html">Back</a></p>
+        <p><a href="../index.html">Back</a></p>
     </body>
 </html>

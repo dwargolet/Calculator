@@ -23,6 +23,6 @@
                 <br />
                 <input type="submit" name="submit" value="Calculate" />            
         </form> 
-      
+      <p><a href="../index.html">Back</a></p>
     </body>
 </html>

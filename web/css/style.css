@@ -3,8 +3,13 @@
     Author     : Daniel
 */
 
-#areaForm, #areaForm2 {
+#areaForm, #areaForm2, #triForm, #recForm, #circForm {
     text-align: center;
     display: block;
     margin-top: 0em;
+}
+
+#results {
+    padding: 20px 20px 20px;
+    border: 2px solid #333333;
 }

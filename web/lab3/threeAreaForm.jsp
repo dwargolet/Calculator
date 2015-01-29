@@ -26,6 +26,8 @@
                 <input id="length" name="length" type="number" value="Length" required="required"/>
             <label for = "width">Width</label>    
                 <input id="width" name="width" type="number" value="Width" required="required" label="Width"/>
+                <br />
+                <br />
                 <input type="submit" name="submit" value="Calculate" />            
         </form>
         <br />
@@ -34,6 +36,8 @@
         <form id="circForm" name="circForm" method="POST" action="../tri?action=circl">
             <label for = "radius">Radius</label>    
                 <input id="radius" name="radius" type="number" value="radius" required="required" label="Radius" />
+                <br />
+                <br />
             <input type="submit" name="submit" value="Calculate" />            
         </form>
         <br />
@@ -44,11 +48,16 @@
                 <input id="height" name="height" type="number" value="height" required="required" label="Height"/>
             <label for = "base">Base</label>    
                 <input id="base" name="base" type="number" value="base" required="required" label="Base"/>
+                <br />
+                <br />
                 <input type="submit" name="submit" value="Calculate" />            
         </form>
         <br />
+        <div id="results">
         <p align="center"><% out.println(outputMsg); %></p>
+        </div>
         <br />
-        <p><a href="index.html">Back</a></p>
+        
+        <p><a href="../index.html">Back</a></p>
     </body>
 </html>
