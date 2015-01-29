@@ -17,15 +17,18 @@
             Object o = request.getAttribute("area");                                                         
             String outputMsg = o == null ? placeHolder : o.toString();                     
         %>
+        <h4 style="text-align: center;">Rectangle Calculator</h4>
         <form id="areaForm2" name="areaForm2" method="POST" action="../areaCon">
-                <input id="length" name="length" type="number" value="Length" required />
-                <input id="width" name="width" type="number" value="Width" required />
+            <label for = "length">Length</label>
+                <input id="length" name="length" type="number" value="Length" required="required" />
+            <label for = "width">Width</label>    
+                <input id="width" name="width" type="number" value="Width" required="required" />
                 <input type="submit" name="submit" value="Calculate" />            
         </form>
         <br />
         <br />
         <br />
-        
+        <h4 style="text-align: center;">Results</h4>
         <p align="center"><% out.println(outputMsg); %></p>
         <p><a href="index.html">Back</a></p>
     </body>

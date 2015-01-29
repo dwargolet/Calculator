@@ -21,7 +21,7 @@ public class TriangleAreaService {
     
     public String getAreaMsg(String height, String base){
         calculateArea(height, base);       
-        msg = "The area of the circle is " + areaString;
+        msg = "The area of the triangle is " + areaString;
         return msg;
     }
 }

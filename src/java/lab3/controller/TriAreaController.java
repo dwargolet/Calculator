@@ -18,7 +18,7 @@ import lab3.model.*;
 public class TriAreaController extends HttpServlet {
     private static final String RESULT_PAGE = "lab3/threeAreaForm.jsp";
     private static final String ACTION_RECT = "rect";
-    private static final String ACTION_CIRC = "circ";
+    private static final String ACTION_CIRC = "circl";
     private static final String ACTION_TRI = "tri";
     
     /**
@@ -55,12 +55,12 @@ public class TriAreaController extends HttpServlet {
                 length = request.getParameter("length");
                 result = rect.getAreaMsg(length, width);
             }
-            if(action.equals(ACTION_CIRC))
+        if(action.equals(ACTION_CIRC))
             {
                 radius = request.getParameter("radius");
                 result = circ.getAreaMsg(radius);
             }
-            if(action.equals(ACTION_TRI))
+        if(action.equals(ACTION_TRI))
             {
                 base = request.getParameter("base");
                 height = request.getParameter("height");
