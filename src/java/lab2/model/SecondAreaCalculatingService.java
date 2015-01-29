@@ -1,9 +1,11 @@
-package lab1.model;
+package lab2.model;
+
+
 /**
  *
  * @author dworgolet
  */
-public class AreaCalculatingService {
+public class SecondAreaCalculatingService {
   
     private double area;
     private String msg;

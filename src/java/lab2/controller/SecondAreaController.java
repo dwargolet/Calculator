@@ -1,4 +1,4 @@
-package lab1.controller;
+package lab2.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -8,15 +8,16 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import lab1.model.AreaCalculatingService;
+import lab2.model.SecondAreaCalculatingService;
+
 
 /**
  *
- * @author dworgolet
+ * @author Daniel
  */
-@WebServlet(name = "AreaCalculator", urlPatterns = {"/calc"})
-public class AreaCalculator extends HttpServlet {
-private static final String RESULT_PAGE = "lab1/result.jsp";
+@WebServlet(name = "SecondAreaController", urlPatterns = {"/areaCon"})
+public class SecondAreaController extends HttpServlet {
+private static final String RESULT_PAGE = "lab2/formAndResults.jsp";
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -31,11 +32,10 @@ private static final String RESULT_PAGE = "lab1/result.jsp";
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
 
-            
            String width = request.getParameter("width");
            String length = request.getParameter("length");
            
-           AreaCalculatingService a = new AreaCalculatingService();  
+           SecondAreaCalculatingService a = new SecondAreaCalculatingService();  
             
            String result = a.getAreaMsg(length, width);
             
