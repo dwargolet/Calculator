@@ -9,6 +9,11 @@
     margin-top: 0em;
 }
 
+#content {
+    text-align: center;
+    display: block;
+}
+
 #results {
     padding: 20px 20px 20px;
     border: 2px solid #333333;

@@ -9,8 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="../css/style.css" rel="stylesheet" type="text/css"/>
-        
+        <link href="<%= request.getContextPath() %>/css/style.css" rel="stylesheet" type="text/css"/>       
         <% final String placeHolder = ""; %>
         <title>Lab 2</title>
     </head>
@@ -19,21 +18,29 @@
             Object o = request.getAttribute("area");                                                         
             String outputMsg = o == null ? placeHolder : o.toString();                     
         %>
+        
         <h4 style="text-align: center;">Rectangle Calculator</h4>
+        <div id="content">
         <form id="areaForm2" name="areaForm2" method="POST" action="../areaCon">
-            <label for = "length">Length</label>
-                <input id="length" name="length" type="number" value="Length" required="required" />
-            <label for = "width">Width</label>    
-                <input id="width" name="width" type="number" value="Width" required="required" />
-                <br />
-                <br />
-                <input type="submit" name="submit" value="Calculate" />            
+            <table>
+                <th>Length</th>
+                    <td><input id="length" name="length" type="number" value="Length" required="required" /></td>
+                <th>Width</th>    
+                    <td><input id="width" name="width" type="number" value="Width" required="required" /></td>                               
+            </table>
+            <br />
+            <br />
+            <input type="submit" name="submit" value="Calculate" />
         </form>
+        </div>
         <br />
         <br />
         <br />
         <h4 style="text-align: center;">Results</h4>
-        <p align="center"><% out.println(outputMsg); %></p>
+        
+        <div id="results">
+           <p align="center"><%= outputMsg %></p>
+        </div
         <p><a href="../index.html">Back</a></p>
     </body>
 </html>
