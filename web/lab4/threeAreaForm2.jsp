@@ -11,9 +11,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-        <% final String placeHolder = ""; %>
-        <title>Lab 4</title>
         <link href="<%= request.getContextPath() %>/css/style.css" rel="stylesheet" type="text/css"/>
+        <title>Lab 4</title>
+        
     </head>
     <body>
         
@@ -29,7 +29,6 @@
                     <input id="width" name="width" type="number" value="Width" required="required" label="Width"/>
                 </div>
                 <br />
-                <br />
                     <input type="submit" name="submit" value="Calculate" />            
             </form>
         </div>
@@ -44,24 +43,25 @@
                 <br />
             <input type="submit" name="submit" value="Calculate" />            
         </form>
-        
-        <br />
         <br />
         
         <h4 style="text-align: center;">Triangle Calculator</h4>
         <form id="triForm" name="triForm" method="POST" action="<%= request.getContextPath() %>/triTwo?action=tri">
-            <label for = "height">Height</label>
+            <div class="input-field col m4">
+                <label for = "height">Height</label>
                 <input id="height" name="height" type="number" value="height" required="required" label="Height"/>
-            <label for = "base">Base</label>    
+            </div>
+            <div class="input-field col m4">
+                <label for = "base">Base</label>    
                 <input id="base" name="base" type="number" value="base" required="required" label="Base"/>
-                <br />
+            </div>
                 <br />
                 <input type="submit" name="submit" value="Calculate" />            
         </form>
         
         <br />
         <div id="results">
-            <p align="center">${result}</p>
+            <p align="center">${area}</p>
         </div>
         <br />
         

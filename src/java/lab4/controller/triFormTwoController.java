@@ -18,7 +18,7 @@ import lab4.model.TriangleAreaCalculator;
  */
 @WebServlet(name = "triFormTwoController", urlPatterns = {"/triTwo"})
 public class triFormTwoController extends HttpServlet {
-    private static final String RESULT_PAGE = "lab3/threeAreaForm.jsp";
+    private static final String RESULT_PAGE = "lab4/threeAreaForm2.jsp";
     private static final String ACTION_RECT = "rect";
     private static final String ACTION_CIRC = "circl";
     private static final String ACTION_TRI = "tri";
