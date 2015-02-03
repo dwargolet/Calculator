@@ -21,7 +21,7 @@
         
         <h4 style="text-align: center;">Rectangle Calculator</h4>
         <div id="content">
-        <form id="areaForm2" name="areaForm2" method="POST" action="../areaCon">
+        <form id="areaForm2" name="areaForm2" method="POST" action="<%= request.getContextPath() %>../areaCon">
             <table>
                 <th>Length</th>
                     <td><input id="length" name="length" type="number" value="Length" required="required" /></td>

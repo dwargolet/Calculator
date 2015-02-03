@@ -9,6 +9,10 @@
     margin-top: 0em;
 }
 
+body{
+   background-color: #CCCCCC;
+}
+
 #content {
     text-align: center;
     display: block;
